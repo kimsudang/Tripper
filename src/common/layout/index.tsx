@@ -10,10 +10,10 @@ export default function Layout({ children }) {
   const pathname = usePathname();
 
   return (
-    <div className="w-screen flex-col">
+    <div className="w-full flex-col">
       <Header></Header>
       <Banner></Banner>
-      <div>{children}</div>
+      <div className="h-5/6">{children}</div>
       <Footer></Footer>
     </div>
   );
