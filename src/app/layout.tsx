@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Layout from "@/common/layout";
+import Layout from "@/_common/layout";
+import ApolloSetting from "@/_common/settings/apollo-setting";
 
 const dohyeon = localFont({
   src: "./fonts/BMDOHYEON_ttf.ttf",
@@ -22,7 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dohyeon.variable} w-screen`}>
-        <Layout>{children}</Layout>
+        <ApolloSetting>
+          <Layout>{children}</Layout>
+        </ApolloSetting>
       </body>
     </html>
   );
