@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const schma = z.object({
+export const schema = z.object({
   email: z.string().email({ message: "이메일 형식이 일치하지 않습니다." }),
   password: z
     .string()

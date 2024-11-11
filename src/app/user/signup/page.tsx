@@ -1,3 +1,5 @@
+"use client";
+
 import SignupFormComponent from "../_components/signupForm";
 
 const SignupPage = () => {
