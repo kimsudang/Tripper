@@ -1,3 +1,3 @@
 export default function Home() {
-  return <></>;
+  return <div>메인 홈 화면입니다.</div>;
 }
